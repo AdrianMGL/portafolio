@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Adrian</title>
+    <!-- ========================= FAVICON =========================-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- ========================= FONTS =========================-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========================= STYLE CSS =========================-->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media_queries.css" />
+  </head>
+  <body id="top" class="dark_theme">
+    <!-- ========================= MAIN =========================-->
+
+    <!-- ========= HEADER ========= -->
+    <header class="header" data-header>
+      <div class="container">
+        <!--  -->
+        <h1 class="h1 logo">
+          <a href="#">Adrián<span>.</span></a>
+        </h1>
+        <!--  -->
+        <div class="navbar-actions">
+          <!--  -->
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+        <!--  -->
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+        <!--  -->
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li><a href="#home" class="navbar-link">Home.</a></li>
+            <li><a href="#about" class="navbar-link">Acerca de mí.</a></li>
+            <li>
+              <a href="#skills" class="navbar-link">Mis Habilidades.</a>
+            </li>
+            <li><a href="#stats" class="navbar-link">Experiencia.</a></li>
+            <li><a href="#portfolio" class="navbar-link">Portafolio.</a></li>
+            <li><a href="#contact" class="navbar-link">Contacto.</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!------- END HEADER ------->
+
+    <!-- ========= MAIN ========= -->
+
+    <main>
+      <article class="container">
+        <!-- ===== HERO ===== -->
+
+        <section class="hero" id="home">
+          <!--  -->
+          <figure class="hero-banner">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/images/hero-banner-AMGL.png"
+              />
+              <source
+                media="(min-width: 500px)"
+                srcset="./assets/images/hero-banner-md-AMGL.png"
+              />
+
+              <img
+                src="./assets/images/hero-banner-sm-AMGL.png"
+                alt="Desarrollador web Adrián Guzmán"
+                class="w-100"
+              />
+            </picture>
+          </figure>
+          <!--  -->
+          <div class="hero-content">
+            <h2 class="h2 hero-title animated-text">
+              <span
+                style="
+                  --content: 'Desarrollador web';
+                  --start-color: #007cf0;
+                  --end-color: #00dfd8;
+                  --delay: 0s;
+                "
+                >Desarrollador web</span
+              >
+              <span
+                style="
+                  --content: '&';
+                  --start-color: #7928ca;
+                  --end-color: #ff0080;
+                  --delay: 3s;
+                "
+                >&</span
+              >
+              <span
+                style="
+                  --content: 'creación de productos creativos.';
+                  --start-color: #ff4d4d;
+                  --end-color: #f9cb2b;
+                  --delay: 6s;
+                "
+                >creación de productos creativos.
+              </span>
+              <!-- Desarrollador web & creación de productos creativos -->
+            </h2>
+            <a href="#contact" class="btn btn-primary">Contáctame</a>
+          </div>
+          <!--  -->
+          <ul class="hero-social-list">
+            <!-- Linkedin -->
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+            <!-- Facebook -->
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <div class="tooltip">Facebook</div>
+              </a>
+            </li>
+            <!-- Github -->
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-github"></ion-icon>
+                <div class="tooltip">Github</div>
+              </a>
+            </li>
+          </ul>
+          <!-- Scroll -->
+          <a href="#about" class="scroll-down">Scroll</a>
+        </section>
+
+        <!------- END HERO ------->
+
+        <!-- ===== ABOUT ===== -->
+
+        <section class="about" id="about">
+          <figure class="about-banner">
+            <img
+              src="./assets/images/about-banner.png"
+              alt="Desarrollador web Adrián Guzmán"
+              class="w-100"
+            />
+          </figure>
+
+          <div class="about-content section-content">
+            <p class="section-subtitle">Acerca de mi</p>
+            <h2 class="h3 section-title">
+              ¿Necesita un producto creativo? ¡Puedo ayudarle!
+            </h2>
+
+            <p class="section-text">
+              ¡Hola! Soy Adrián Guzmán y soy un desarrollador apasionado por
+              crear aplicaciones web limpias con funcionalidades intuitivas.
+              Disfruto el proceso de convertir ideas en realidad usando
+              soluciones creativas. Siempre tengo curiosidad por aprender nuevas
+              habilidades, herramientas y conceptos. Además de trabajar en
+              varios proyectos full stack en solitario, he trabajado con equipos
+              creativos, lo que implica stand-ups y comunicaciones diarias,
+              control de fuentes y gestión de proyectos.
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-secondary">Contactar</button>
+              <button class="btn btn-primary">Download CV</button>
+            </div>
+          </div>
+        </section>
+
+        <!------- END ABOUT ------->
+
+        <!-- ===== SKILLS ===== -->
+
+        <section class="skills" id="skills">
+          <div class="skills-content section-content">
+            <p class="section-subtitle">Habilidades</p>
+
+            <h2 class="h3 section-title">
+              ¿Qué incluyeron mis habilidades de programación?
+            </h2>
+
+            <p class="section-text">
+              Desarrollo una interfaz de usuario simple, intuitiva y receptiva
+              que ayuda a los usuarios a hacer las cosas con menos esfuerzo y
+              tiempo con esas tecnologías.
+            </p>
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+          </div>
+          <!-- skills -->
+          <div class="skills-box" data-skills-box>
+            <!-- SKILLS -->
+            <ul class="skills-list">
+              <!-- HTML5 -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">HTML 5</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/html5.png"
+                      alt="HTML 5 logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- CSS3 -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">CSS 3</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/css3.png"
+                      alt="CSS 3 logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- JavaScript -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">JavaScript</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/javascript.png"
+                      alt="JavaScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- PHP -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">PHP</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/skills/php.png" alt="PHP logo" />
+                  </div>
+                </div>
+              </li>
+
+              <!-- jQuery -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">jQuery</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/jquery.png"
+                      alt="jQuery logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- Bootstrap -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Bootstrap</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/bootstrap.png"
+                      alt="Bootstrap logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- SASS -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">SASS</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/sass.png"
+                      alt="SASS logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- React -->
+              <!-- <li>
+                <div class="skill-card">
+                  <div class="tooltip">React</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/react.png"
+                      alt="React logo"
+                    />
+                  </div>
+                </div>
+              </li> -->
+              <!-- Mysql -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Mysql</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/mysql.png"
+                      alt="Mysql logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <!-- Firebase -->
+              <!-- <li>
+                <div class="skill-card">
+                  <div class="tooltip">Firebase</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/firebase.png"
+                      alt="Firebase logo"
+                    />
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+            <!-- TOOLS -->
+            <ul class="tools-list">
+              <!-- Ajax -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Ajax</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/ajax.png"
+                      alt="Ajax logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <!-- Git -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/skills/git.png" alt="Git logo" />
+                  </div>
+                </div>
+              </li>
+              <!-- NPM -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">NPM</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/skills/npm.png" alt="NPM logo" />
+                  </div>
+                </div>
+              </li>
+              <!-- Command Line -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Command Line</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/command.png"
+                      alt="Command Line logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- VS Code -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">VS Code</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/vs-code.png"
+                      alt="VS Code logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- Slack -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Slack</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/slack.png"
+                      alt="Slack logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- Webpack -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Webpack</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/webpack.png"
+                      alt="Webpack logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <!-- Photoshop -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Photoshop</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/photoshop.png"
+                      alt="Photoshop logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- Adobe XD -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Adobe XD</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/adobe-xd.png"
+                      alt="Adobe XD logo"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!------- END SKILLS ------->
+
+        <!-- ===== STATS ''EXPERIENCIA'' ===== -->
+
+        <section class="stats" id="stats">
+          <ul class="stats-list">
+            <!-- 1 -->
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-1.png"
+                    alt="Badge icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  2+ <strong>Años de experiencia </strong>
+                </h2>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+            <!-- 2 -->
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-2.png"
+                    alt="Checkmark icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  15+ <strong>Proyectos completados</strong>
+                </h2>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+            <!-- 3 -->
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-3.png"
+                    alt="Peoples rating icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  7+ <strong>Clientes Felices</strong>
+                </h2>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!------- END STATS ------->
+
+        <!-- ===== PROJECTS ===== -->
+
+        <section class="project" id="portfolio">
+          <ul class="project-list">
+            <li>
+              <div class="project-content section-content">
+                <p class="section-subtitle">Mis Trabajos</p>
+                <h2 class="h3 section-title">
+                  ¡Mira mis obras que te sorprenderán!
+                </h2>
+                <p class="section-text">
+                  Desarrollo el sitio web de mejor calidad que sirva a largo
+                  plazo. La interfaz bien documentada, limpia, fácil y elegante
+                  ayuda a cualquier cliente no técnico.
+                </p>
+              </div>
+            </li>
+            <!-- 1 - Dashboard -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Dashboard.png"
+                    class="w-100"
+                    alt="A Dashboard Responsive."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Dashboard</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 2 - travel -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/page-travel-portada.png"
+                    class="w-100"
+                    alt="A page travel."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Página de viajes de aventuras.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 3 - gallery -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/filter-gallery.png"
+                    class="w-100"
+                    alt="gallery filter by category or type."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Filtro por categoria o tipo.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 4 - Text animation -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/ANIMACION-VERCEL.png"
+                    class="w-100"
+                    alt="Text animation."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Animacion de texto.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 5 - Clock  -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Clock-light-and-dark.png"
+                    class="w-100"
+                    alt="Clock light and dark."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Reloj claro y oscuro.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 6 - Circle User -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/animated-CircleUser.png"
+                    class="w-100"
+                    alt="Animated Circle User."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Usuario del círculo animado.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 7 - music -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner mobile">
+                  <img
+                    src="./assets/images/projects/music.png"
+                    class="w-50"
+                    alt="App music."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">App music.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 8 -  Sign In -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Sign-In-Sign-Up-Form-1.png"
+                    class="w-100"
+                    alt="Beautiful, Sign In."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Iniciar sesión.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <!-- 9 - Pricing card -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Pricing-card-animated.png"
+                    class="w-100"
+                    alt="Pricing card animated.."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Tarjeta de precios animada.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 10 - unsplash clone -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/unsplash-clone-1.png"
+                    class="w-100"
+                    alt="unsplash clone."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Unsplash clone.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <!-- 11 - Portfolio -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Portfolio-Adrianv1.png"
+                    class="w-100"
+                    alt="Portfolio personal."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Portfolio personal.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 12 - Glassmorphism List -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Glassmorphism-List-Hover.png"
+                    class="w-100"
+                    alt="Glassmorphism List Hover."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Glassmorphism List Hover.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 13 - Agency Website  -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Agency-Website -portada.png"
+                    class="w-100"
+                    alt="Agency Website."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Sitio web de agencia.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 14 - Product Card -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Product-Card-animated-v1.png"
+                    class="w-100"
+                    alt="Product Card animated."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Tarjeta de producto animada.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 15 - Timeline vertical -->
+            <li>
+              <a class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/Timeline-vertical.png"
+                    class="w-100"
+                    alt="Timeline vertical."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Línea de tiempo verticales.</h3>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <li><button class="load-more">Load more work</button></li>
+          </ul>
+        </section>
+
+        <!------- END PROJECTS ------->
+
+        <!-- ===== CONTACT ===== -->
+
+        <section class="contact" id="contact">
+          <!-- Contact me -->
+          <div class="contact-content section-content">
+            <p class="section-subtitle">Contacto</p>
+            <h2 class="h3 section-title">
+              ¿Tienes algún proyecto? Por favor, envíe un mensaje
+            </h2>
+            <p class="section-text">
+              Ponte en contacto y déjame saber cómo puedo ayudar. Rellena el
+              formulario y me pondré en contacto lo antes posible.
+            </p>
+            <!-- contact-list -->
+            <ul class="contact-list">
+              <!-- Address -->
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Dirección:</h3>
+                  <address class="contact-info">
+                    Travessera Zelaya, 5, Bajo 6º, porres, granata, wa
+                    47122-4194
+                  </address>
+                </div>
+              </li>
+              <!-- Phone -->
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Teléfono:</h3>
+                  <a href="tel:01234567789" class="contact-info"
+                    >(01) 234 567 789</a
+                  >
+                  <a href="tel:09765432200" class="contact-info"
+                    >(09) 765 432 200</a
+                  >
+                </div>
+              </li>
+              <!-- Email -->
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+                  <a href="mailto:info@adrian.com" class="contact-info"
+                    >info@adrian.com</a
+                  >
+                  <a href="mailto:support@adrian.com" class="contact-info"
+                    >support@adrian.com</a
+                  >
+                </div>
+              </li>
+              <!-- Social list -->
+              <li>
+                <ul class="contact-social-list">
+                  <!-- linkedin -->
+                  <li>
+                    <a href="#" class="contact-social-link">
+                      <div class="tooltip">Linkedin</div>
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+                  <!-- facebook -->
+                  <li>
+                    <a href="#" class="contact-social-link">
+                      <div class="tooltip">Facebook</div>
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                  <!-- github -->
+                  <li>
+                    <a href="#" class="contact-social-link">
+                      <div class="tooltip">Github</div>
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form  -->
+          <form action="" class="contact-form">
+            <!-- name -->
+            <div class="form-wrapper">
+              <label for="name" class="form-label">Nombre *</label>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="input-field"
+                  required
+                  placeholder="ingrese su nombre"
+                />
+                <ion-icon name="Person"></ion-icon>
+              </div>
+            </div>
+            <!-- email -->
+            <div class="form-wrapper">
+              <label for="email" class="form-label">Email *</label>
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-field"
+                  required
+                  placeholder="correo@mail.com"
+                />
+                <ion-icon name="mail"></ion-icon>
+              </div>
+            </div>
+            <!-- phone -->
+            <div class="form-wrapper">
+              <label for="phone" class="form-label">Telefono </label>
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="input-field"
+                  required
+                  placeholder="Number"
+                />
+                <ion-icon name="call"></ion-icon>
+              </div>
+            </div>
+            <!-- message -->
+            <div class="form-wrapper">
+              <label for="message" class="form-label">Mensaje *</label>
+              <div class="input-wrapper">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="input-field"
+                  placeholder="Escribe tu mensaje..."
+                ></textarea>
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <small class="campos"><span> * </span> Campos obligatorios</small>
+          </form>
+        </section>
+
+        <!------- END CONTACT ------->
+      </article>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="#">Adrián<span>.</span></a>
+        </p>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">Adrian MGL</a> . All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!------- END FOOTER ------->
+
+    <!-- ===== GO TO TOP ===== -->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!--========================= JS =========================-->
+
+    <!--========= IONICON =========-->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- ========= SCRIPT =========-->
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
