@@ -89,15 +89,15 @@
             <picture>
               <source
                 media="(min-width: 768px)"
-                srcset="./assets/images/hero-banner-AMGL.png"
+                srcset="./assets/images/hero-banner-lg.png"
               />
               <source
-                media="(min-width: 500px)"
-                srcset="./assets/images/hero-banner-md-AMGL.png"
+                media="(min-width: 550px)"
+                srcset="./assets/images/hero-banner-md.png"
               />
 
               <img
-                src="./assets/images/hero-banner-sm-AMGL.png"
+                src="./assets/images/hero-banner-sm.png"
                 alt="Desarrollador web Adrián Guzmán"
                 class="w-100"
               />
@@ -108,61 +108,75 @@
             <h2 class="h2 hero-title animated-text">
               <span
                 style="
-                  --content: 'Desarrollador web';
+                  --content: 'Desarrollador';
                   --start-color: #007cf0;
                   --end-color: #00dfd8;
                   --delay: 0s;
                 "
-                >Desarrollador web</span
+                >Desarrollador</span
               >
               <span
                 style="
-                  --content: '&';
+                  --content: 'fullstack';
                   --start-color: #7928ca;
                   --end-color: #ff0080;
                   --delay: 3s;
                 "
-                >&</span
+                >fullstack</span
               >
-              <span
-                style="
-                  --content: 'creación de productos creativos.';
-                  --start-color: #ff4d4d;
-                  --end-color: #f9cb2b;
-                  --delay: 6s;
-                "
-                >creación de productos creativos.
-              </span>
-              <!-- Desarrollador web & creación de productos creativos -->
+              <h3 class="h3 hero-title animated-text">
+                <span
+                  style="
+                    --content: 'Adrián M. Guzmán López';
+                    --start-color: #ff4d4d;
+                    --end-color: #f9cb2b;
+                    --delay: 6s;
+                  "
+                  >Adrián M. Guzmán López
+                </span>
+                <!-- Desarrollador web & creación de productos creativos -->
+              </h3>
             </h2>
-            <a href="#contact" class="btn btn-primary">Contáctame</a>
+            <a href="#contact" class="btn btn-primary contactame">Contáctame</a>
           </div>
           <!--  -->
           <ul class="hero-social-list">
             <!-- Linkedin -->
             <li>
-              <a href="#" class="hero-social-link">
+              <a
+                href="https://www.linkedin.com/in/adrianmguzmanlopez/"
+                target="_blank"
+                class="hero-social-link"
+              >
                 <ion-icon name="logo-linkedin"></ion-icon>
                 <div class="tooltip">Linkedin</div>
               </a>
             </li>
-            <!-- Facebook -->
+            <!-- Email -->
             <li>
-              <a href="#" class="hero-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-                <div class="tooltip">Facebook</div>
+              <a
+                href="mailto:adrienguzmanlopez@gmail.com"
+                target="_blank"
+                class="hero-social-link"
+              >
+                <ion-icon name="mail" class="bx-tada"></ion-icon>
+                <div class="tooltip">Email</div>
               </a>
             </li>
             <!-- Github -->
             <li>
-              <a href="#" class="hero-social-link">
+              <a
+                href="https://github.com/adrianMGL"
+                target="_blank"
+                class="hero-social-link"
+              >
                 <ion-icon name="logo-github"></ion-icon>
                 <div class="tooltip">Github</div>
               </a>
             </li>
           </ul>
           <!-- Scroll -->
-          <a href="#about" class="scroll-down">Scroll</a>
+          <a href="#about" class="scroll-down">Scroll </a>
         </section>
 
         <!------- END HERO ------->
@@ -185,14 +199,14 @@
             </h2>
 
             <p class="section-text">
-              ¡Hola! Soy Adrián Guzmán y soy un desarrollador apasionado por
-              crear aplicaciones web limpias con funcionalidades intuitivas.
+              ¡Hola! Soy Adrián Guzmán López y soy un desarrollador apasionado
+              por crear aplicaciones web limpias con funcionalidades intuitivas.
               Disfruto el proceso de convertir ideas en realidad usando
               soluciones creativas. Siempre tengo curiosidad por aprender nuevas
               habilidades, herramientas y conceptos. Además de trabajar en
-              varios proyectos full stack en solitario, he trabajado con equipos
-              creativos, lo que implica stand-ups y comunicaciones diarias,
-              control de fuentes y gestión de proyectos.
+              varios proyectos full stack, he trabajado con equipos creativos,
+              lo que implica comunicaciones diarias, control de fuentes y
+              gestión de proyectos.
             </p>
             <div class="btn-group">
               <button class="btn btn-secondary">Contactar</button>
@@ -263,6 +277,40 @@
                   </div>
                 </div>
               </li>
+              <!-- React -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">React</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/react.png"
+                      alt="React logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- NodeJs -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Node JS</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/nodeJS.png"
+                      alt="NODE JS logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <!-- API -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">API</div>
+                  <div class="card-icon">
+                    <img src="./assets/images/skills/api-re.png" alt="API" />
+                  </div>
+                </div>
+              </li>
               <!-- PHP -->
               <li>
                 <div class="skill-card">
@@ -273,18 +321,19 @@
                 </div>
               </li>
 
-              <!-- jQuery -->
+              <!-- Mysql -->
               <li>
                 <div class="skill-card">
-                  <div class="tooltip">jQuery</div>
+                  <div class="tooltip">Mysql</div>
                   <div class="card-icon">
                     <img
-                      src="./assets/images/skills/jquery.png"
-                      alt="jQuery logo"
+                      src="./assets/images/skills/mysql.png"
+                      alt="Mysql logo"
                     />
                   </div>
                 </div>
               </li>
+
               <!-- Bootstrap -->
               <li>
                 <div class="skill-card">
@@ -293,6 +342,18 @@
                     <img
                       src="./assets/images/skills/bootstrap.png"
                       alt="Bootstrap logo"
+                    />
+                  </div>
+                </div>
+              </li>
+              <!-- Tailwind -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Tailwind</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/tailwind.png"
+                      alt="Tailwind logo"
                     />
                   </div>
                 </div>
@@ -309,26 +370,15 @@
                   </div>
                 </div>
               </li>
-              <!-- React -->
-              <!-- <li>
-                <div class="skill-card">
-                  <div class="tooltip">React</div>
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/skills/react.png"
-                      alt="React logo"
-                    />
-                  </div>
-                </div>
-              </li> -->
-              <!-- Mysql -->
+
+              <!-- jQuery -->
               <li>
                 <div class="skill-card">
-                  <div class="tooltip">Mysql</div>
+                  <div class="tooltip">jQuery</div>
                   <div class="card-icon">
                     <img
-                      src="./assets/images/skills/mysql.png"
-                      alt="Mysql logo"
+                      src="./assets/images/skills/jquery.png"
+                      alt="jQuery logo"
                     />
                   </div>
                 </div>
@@ -349,25 +399,38 @@
             </ul>
             <!-- TOOLS -->
             <ul class="tools-list">
-              <!-- Ajax -->
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Ajax</div>
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/skills/ajax.png"
-                      alt="Ajax logo"
-                    />
-                  </div>
-                </div>
-              </li>
-
               <!-- Git -->
               <li>
                 <div class="skill-card">
                   <div class="tooltip">Git</div>
                   <div class="card-icon">
                     <img src="./assets/images/skills/git.png" alt="Git logo" />
+                  </div>
+                </div>
+              </li>
+
+              <!-- GitHub -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">GitHub</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/github.png"
+                      alt="GitHub logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <!-- Vite -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Vite JS</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/vitejs.png"
+                      alt="Vite logo"
+                    />
                   </div>
                 </div>
               </li>
@@ -424,6 +487,19 @@
                     <img
                       src="./assets/images/skills/webpack.png"
                       alt="Webpack logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <!-- Ajax -->
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Ajax</div>
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/skills/ajax.png"
+                      alt="Ajax logo"
                     />
                   </div>
                 </div>
@@ -490,7 +566,7 @@
                 </div>
 
                 <h2 class="h2 card-title">
-                  15+ <strong>Proyectos completados</strong>
+                  25+ <strong>Proyectos completados</strong>
                 </h2>
                 <ion-icon name="chevron-forward-outline"></ion-icon>
               </a>
@@ -506,7 +582,7 @@
                 </div>
 
                 <h2 class="h2 card-title">
-                  7+ <strong>Clientes Felices</strong>
+                  15+ <strong>Clientes Felices</strong>
                 </h2>
                 <ion-icon name="chevron-forward-outline"></ion-icon>
               </a>
@@ -533,28 +609,43 @@
                 </p>
               </div>
             </li>
-            <!-- 1 - Dashboard -->
+            <!-- 1 - Ecommerce -->
             <li>
-              <a class="project-card">
+              <a
+                class="project-card"
+                href="https://react-ecommerce-deliverable6.netlify.app/"
+                target="_blank"
+              >
                 <figure class="card-banner">
                   <img
-                    src="./assets/images/projects/Dashboard.png"
+                    src="./assets/images/projects/react-ecommerce-portada.png"
                     class="w-100"
-                    alt="A Dashboard Responsive."
+                    alt="A Ecommerce Responsive."
                   />
                 </figure>
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
 
                 <div class="card-content">
-                  <h3 class="h4 card-title">Dashboard</h3>
+                  <h3 class="h4 card-title">E-commerce</h3>
+                  <h4 class="h5 card-title">
+                    React, Redux Toolkit, APIs, React Bootstrap, Boxicons
+                  </h4>
                   <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
+                    >Agosto 2022</time
                   >
                 </div>
               </a>
             </li>
+
             <!-- 2 - travel -->
             <li>
-              <a class="project-card">
+              <a
+                class="project-card"
+                href="https://travel-adventure-tour.netlify.app/#"
+                target="_blank"
+              >
                 <figure class="card-banner">
                   <img
                     src="./assets/images/projects/page-travel-portada.png"
@@ -562,125 +653,178 @@
                     alt="A page travel."
                   />
                 </figure>
-
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
                 <div class="card-content">
-                  <h3 class="h4 card-title">Página de viajes de aventuras.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
+                  <h3 class="h4 card-title">Website Travel.</h3>
+                  <h4 class="h5 card-title">
+                    HTML, CSS, Javascript, Boxicons.
+                  </h4>
+                  <time class="publish-date" datatime="2022-04">Mayo 2021</time>
                 </div>
               </a>
             </li>
-            <!-- 3 - gallery -->
+            <!-- 3 - Dashboard -->
             <li>
-              <a class="project-card">
+              <a
+                class="project-card"
+                href="https://dashboard-responsive-theme.netlify.app/"
+                target="_blank"
+              >
                 <figure class="card-banner">
                   <img
-                    src="./assets/images/projects/filter-gallery.png"
+                    src="./assets/images/projects/dashboard-portada.png"
                     class="w-100"
-                    alt="gallery filter by category or type."
+                    alt="A Dashboard Responsive."
                   />
                 </figure>
-
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
                 <div class="card-content">
-                  <h3 class="h4 card-title">Filtro por categoria o tipo.</h3>
+                  <h3 class="h4 card-title">Dashboard</h3>
+                  <h4 class="h5 card-title">
+                    HTML, CSS, Javascript, Boxicons.
+                  </h4>
                   <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
+                    >Septiembre 2021</time
                   >
                 </div>
               </a>
             </li>
-            <!-- 4 - Text animation -->
+
+            <!-- 4 -  Sign In -->
             <li>
-              <a class="project-card">
+              <a
+                class="project-card"
+                href="https://form-signin-signup.netlify.app/"
+                target="_blank"
+              >
                 <figure class="card-banner">
                   <img
-                    src="./assets/images/projects/ANIMACION-VERCEL.png"
-                    class="w-100"
-                    alt="Text animation."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">Animacion de texto.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 5 - Clock  -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/Clock-light-and-dark.png"
-                    class="w-100"
-                    alt="Clock light and dark."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">Reloj claro y oscuro.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 6 - Circle User -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/animated-CircleUser.png"
-                    class="w-100"
-                    alt="Animated Circle User."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">Usuario del círculo animado.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 7 - music -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner mobile">
-                  <img
-                    src="./assets/images/projects/music.png"
-                    class="w-50"
-                    alt="App music."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">App music.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 8 -  Sign In -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/Sign-In-Sign-Up-Form-1.png"
+                    src="./assets/images/projects/SignIn-SignUp-portada.png"
                     class="w-100"
                     alt="Beautiful, Sign In."
                   />
                 </figure>
-
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
                 <div class="card-content">
                   <h3 class="h4 card-title">Iniciar sesión.</h3>
+                  <h4 class="h5 card-title">
+                    HTML, CSS, Javascript, fontawesome.
+                  </h4>
                   <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
+                    >Marzo 2021</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <!-- 5 - gallery -->
+            <li>
+              <a
+                class="project-card"
+                href="https://gallery-filter-v2.netlify.app/"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/filter-gallery-portada.png"
+                    class="w-100"
+                    alt="gallery filter by category or type."
+                  />
+                </figure>
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Gallery.</h3>
+                  <h4 class="h5 card-title">HTML, CSS, Javascript.</h4>
+                  <time class="publish-date" datatime="2022-04"
+                    >April 2021</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 6 - Ecommerce CARA -->
+            <li>
+              <a
+                class="project-card"
+                href="https://ecommece-cara.netlify.app/index.html"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/ecommece-cara-portada.png"
+                    class="w-100"
+                    alt="Ecommerce CARA"
+                  />
+                </figure>
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Ecommerce CARA</h3>
+                  <h4 class="h5 card-title">
+                    HTML, CSS, Javascript, Boxicons.
+                  </h4>
+                  <time class="publish-date" datatime="2022-04"
+                    >Enero 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 7 - Digital -->
+            <li>
+              <a
+                class="project-card"
+                href="https://website-digital.netlify.app/"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/agency-website-portada.png"
+                    class="w-100"
+                    alt="Website Digital."
+                  />
+                </figure>
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Website Digital.</h3>
+                  <h4 class="h5 card-title">HTML, CSS, Javascript.</h4>
+                  <time class="publish-date" datatime="2022-04"
+                    >Julio 2021</time
+                  >
+                </div>
+              </a>
+            </li>
+            <!-- 8 - Calculator -->
+            <li>
+              <a
+                class="project-card"
+                href="https://react-calculator-basic.netlify.app/"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/projects/calculator-portada.png"
+                    class="w-100"
+                    alt="Calculadora."
+                  />
+                </figure>
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
+                <div class="card-content">
+                  <h3 class="h4 card-title">Calculadora Basica</h3>
+                  <h4 class="h5 card-title">React.</h4>
+                  <time class="publish-date" datatime="2022-04"
+                    >Diciembre 2021</time
                   >
                 </div>
               </a>
@@ -688,138 +832,60 @@
 
             <!-- 9 - Pricing card -->
             <li>
-              <a class="project-card">
+              <a
+                class="project-card"
+                href="https://pricing-cards-moon.netlify.app/"
+                target="_blank"
+              >
                 <figure class="card-banner">
                   <img
-                    src="./assets/images/projects/Pricing-card-animated.png"
+                    src="./assets/images/projects/pricing-card-animated-portada.png"
                     class="w-100"
                     alt="Pricing card animated.."
                   />
                 </figure>
-
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
                 <div class="card-content">
                   <h3 class="h4 card-title">Tarjeta de precios animada.</h3>
+                  <h4 class="h5 card-title">
+                    HTML, CSS, Javascript, Animated.
+                  </h4>
                   <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 10 - unsplash clone -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/unsplash-clone-1.png"
-                    class="w-100"
-                    alt="unsplash clone."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">Unsplash clone.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
+                    >Enero 2021</time
                   >
                 </div>
               </a>
             </li>
 
-            <!-- 11 - Portfolio -->
+            <!-- 10 - Glassmorphism List -->
             <li>
-              <a class="project-card">
+              <a
+                class="project-card"
+                href="https://glassmorphism-list.netlify.app/"
+                target="_blank"
+              >
                 <figure class="card-banner">
                   <img
-                    src="./assets/images/projects/Portfolio-Adrianv1.png"
-                    class="w-100"
-                    alt="Portfolio personal."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">Portfolio personal.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 12 - Glassmorphism List -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/Glassmorphism-List-Hover.png"
+                    src="./assets/images/projects/glassmorphism-list-portada.png"
                     class="w-100"
                     alt="Glassmorphism List Hover."
                   />
                 </figure>
-
+                <div class="card-view">
+                  <ion-icon name="eye"></ion-icon>
+                </div>
                 <div class="card-content">
                   <h3 class="h4 card-title">Glassmorphism List Hover.</h3>
+                  <h4 class="h5 card-title">HTML, CSS, Javascript.</h4>
                   <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
+                    >Febrero 2021</time
                   >
                 </div>
               </a>
             </li>
-            <!-- 13 - Agency Website  -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/Agency-Website -portada.png"
-                    class="w-100"
-                    alt="Agency Website."
-                  />
-                </figure>
 
-                <div class="card-content">
-                  <h3 class="h4 card-title">Sitio web de agencia.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 14 - Product Card -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/Product-Card-animated-v1.png"
-                    class="w-100"
-                    alt="Product Card animated."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">Tarjeta de producto animada.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
-            <!-- 15 - Timeline vertical -->
-            <li>
-              <a class="project-card">
-                <figure class="card-banner">
-                  <img
-                    src="./assets/images/projects/Timeline-vertical.png"
-                    class="w-100"
-                    alt="Timeline vertical."
-                  />
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h4 card-title">Línea de tiempo verticales.</h3>
-                  <time class="publish-date" datatime="2022-04"
-                    >April 2022</time
-                  >
-                </div>
-              </a>
-            </li>
             <!--  -->
             <li><button class="load-more">Load more work</button></li>
           </ul>
@@ -834,10 +900,10 @@
           <div class="contact-content section-content">
             <p class="section-subtitle">Contacto</p>
             <h2 class="h3 section-title">
-              ¿Tienes algún proyecto? Por favor, envíe un mensaje
+              ¿Tiene algún proyecto? Por favor, envíe un mensaje
             </h2>
             <p class="section-text">
-              Ponte en contacto y déjame saber cómo puedo ayudar. Rellena el
+              Ponte en contacto y déjame saber cómo puedo ayudarle. Complete el
               formulario y me pondré en contacto lo antes posible.
             </p>
             <!-- contact-list -->
@@ -850,8 +916,7 @@
                 <div class="wrapper">
                   <h3 class="h4 contact-item-title">Dirección:</h3>
                   <address class="contact-info">
-                    Travessera Zelaya, 5, Bajo 6º, porres, granata, wa
-                    47122-4194
+                    Patzcuaro, Michoacán, México.
                   </address>
                 </div>
               </li>
@@ -861,12 +926,9 @@
                   <ion-icon name="call-outline"></ion-icon>
                 </div>
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Teléfono:</h3>
-                  <a href="tel:01234567789" class="contact-info"
-                    >(01) 234 567 789</a
-                  >
-                  <a href="tel:09765432200" class="contact-info"
-                    >(09) 765 432 200</a
+                  <h3 class="h4 contact-item-title">Celular:</h3>
+                  <a href="tel:434 131 4032" class="contact-info"
+                    >434 131 4032</a
                   >
                 </div>
               </li>
@@ -877,8 +939,10 @@
                 </div>
                 <div class="wrapper">
                   <h3 class="h4 contact-item-title">Email:</h3>
-                  <a href="mailto:info@adrian.com" class="contact-info"
-                    >info@adrian.com</a
+                  <a
+                    href="mailto:adrienguzmanlopez@gmail.com"
+                    class="contact-info"
+                    >adrienguzmanlopez@gmail.com</a
                   >
                   <a href="mailto:support@adrian.com" class="contact-info"
                     >support@adrian.com</a
@@ -890,7 +954,11 @@
                 <ul class="contact-social-list">
                   <!-- linkedin -->
                   <li>
-                    <a href="#" class="contact-social-link">
+                    <a
+                      href="https://www.linkedin.com/in/adrianmguzmanlopez/"
+                      target="_blank"
+                      class="contact-social-link"
+                    >
                       <div class="tooltip">Linkedin</div>
                       <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
@@ -904,7 +972,11 @@
                   </li>
                   <!-- github -->
                   <li>
-                    <a href="#" class="contact-social-link">
+                    <a
+                      href="https://github.com/adrianMGL"
+                      target="_blank"
+                      class="contact-social-link"
+                    >
                       <div class="tooltip">Github</div>
                       <ion-icon name="logo-github"></ion-icon>
                     </a>
