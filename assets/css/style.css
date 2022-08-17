@@ -26,11 +26,15 @@
 
   /**  TYPOGRAPHY */
 
-  --ff-saira-stencil-one: "Saira Stencil One", sans-serif;
+  --ff-saira-stencil-one: "Antonio", sans-serif;
+  /* --ff-saira-stencil-one: "Saira Stencil One", sans-serif; */
+
+  /* --ff-poppins: "Poppins", sans-serif; */
+  /* --ff-saira-stencil-one: "Autour One", cursive; */
   --ff-poppins: "Poppins", sans-serif;
   --ff-roboto: "Roboto", sans-serif;
 
-  --fs-1: 2rem;
+  --fs-1: 2.5rem;
   --fs-2: calc(1.813rem + 1vw);
   --fs-3: calc(1.313rem + 1vw);
   --fs-4: 1.4rem;
@@ -184,8 +188,9 @@ body.active {
 
 .h1 {
   font-size: var(--fs-1);
-  line-height: 1.2;
-  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
 }
 
 .h2,
@@ -230,6 +235,173 @@ body.active {
   width: 50%;
 }
 
+/**
+*
+*
+*/
+.chicle:hover {
+  -webkit-animation: 1s chicle 1;
+}
+
+@-webkit-keyframes chicle {
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+  50% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+/** */
+
+.cartel:hover {
+  -webkit-animation: 1s cartel 1;
+  -webkit-transform-origin: top center;
+}
+
+@-webkit-keyframes cartel {
+  20% {
+    -webkit-transform: rotate(15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-10deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-3deg);
+  }
+}
+
+/** */
+.balancear:hover {
+  -webkit-animation: 1s balancear 1;
+}
+
+@-webkit-keyframes balancear {
+  20% {
+    -webkit-transform: scale(0.7) rotate(-6deg);
+  }
+  30%,
+  70% {
+    -webkit-transform: scale(1.1) rotate(6deg);
+  }
+  50%,
+  90% {
+    -webkit-transform: scale(1.1) rotate(-6deg);
+  }
+}
+
+/*SOMBRA MOVIL*/
+/*Efecto de sombra con caja que sube y baja*/
+.sombra-movil:hover {
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
+}
+.sombra-movil:before {
+  content: "";
+  background: radial-gradient(
+    ellipse,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  width: 90%;
+  height: 20px;
+  top: 100%;
+  left: 5%;
+  position: absolute;
+  opacity: 0;
+}
+.sombra-movil:hover:before {
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra infinite;
+}
+
+@keyframes mover-caja {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover-sombra {
+  50% {
+    opacity: 1;
+    transform: translateY(10px) scale(0.9);
+  }
+}
+
+/*SOMBRA FORM*/
+/*Efecto de sombra con caja que sube y baja*/
+.sombra-form {
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja-form infinite;
+}
+.sombra-form:before {
+  content: "";
+  background: radial-gradient(
+    ellipse,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  width: 90%;
+  height: 20px;
+  top: 100%;
+  left: 5%;
+  position: absolute;
+  opacity: 0;
+}
+.sombra-form:before {
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra-form infinite;
+}
+
+@keyframes mover-caja-form {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover-sombra-form {
+  50% {
+    opacity: 1;
+    transform: translateY(10px) scale(0.9);
+  }
+}
+
+/** */
+
+/*VAIVEN*/
+/*Efecto vaivén, jugando con la rotración y la traslación en % (el porcentaje se calcula en base al tamaño del elemento)*/
+.vaiven:hover {
+  animation: vaiven 1s 1;
+}
+@keyframes vaiven {
+  15% {
+    transform: translateX(-25%) rotate(-10deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(5deg);
+  }
+  45% {
+    transform: translateX(-10%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(5%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-3%) rotate(-1deg);
+  }
+}
+
 .btn {
   max-width: max-content;
   color: var(--color-primary);
@@ -263,7 +435,7 @@ body.active {
 
 .section-subtitle {
   position: relative;
-  color: var(--color-secondary);
+  color: var(--color-raw-seinna);
   text-transform: uppercase;
   padding-bottom: 5px;
   margin-bottom: 20px;
@@ -342,11 +514,16 @@ body.active {
   position: relative;
   min-width: 77px;
   z-index: 2;
+  /* font-size: 3rem; */
 }
 
 .logo a {
   color: var(--color-primary);
   font-family: var(--ff-saira-stencil-one);
+}
+
+.logo a:hover {
+  color: var(--color-raw-seinna);
 }
 
 .logo span {
@@ -370,6 +547,8 @@ body.active {
   background: var(--bg-secondary);
   border-radius: 100px;
   transition: var(--transition-1);
+  /* border: 1px dotted var(--color-raw-seinna); */
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
 }
 
 .header.active .theme-btn {
@@ -460,12 +639,18 @@ body.active {
   transition-delay: 0s;
 }
 
+/* .navbar-list{
+  background-color: crimson;
+} */
+
 .navbar-list > li {
   /* background-color: red; */
   margin-block: 15px;
   padding-inline: 40px;
   overflow: hidden;
-  /* font-size: 1.1rem; */
+  font-weight: 600;
+
+  font-size: 1rem;
 }
 
 .navbar-link {
@@ -473,7 +658,7 @@ body.active {
   width: max-content;
   margin-inline: auto;
   color: var(--color-primary);
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-roboto);
   font-size: var(--fs-1);
   padding: 10px;
   transform: translateY(50px);
@@ -488,7 +673,7 @@ body.active {
 .navbar-link::before {
   content: "";
   position: absolute;
-  top: 70%;
+  top: 85%;
   transform: translateY(-50%);
   left: 0;
   height: 5px;
@@ -499,6 +684,22 @@ body.active {
 
 .navbar-link:is(:hover, :focus)::before {
   width: 100%;
+}
+
+.contacto {
+  /* color: red; */
+  border: 1px solid var(--color-raw-seinna);
+  border-radius: 1rem;
+  padding: 0.5rem 0.8rem;
+  /* font-size: 0.85rem; */
+  font-size: 2.2rem;
+  width: max-content;
+  margin-inline: auto;
+}
+
+.contacto:hover {
+  color: var(--color-white);
+  background-color: var(--color-raw-seinna);
 }
 
 /**
@@ -534,11 +735,13 @@ main {
 
 .hero-content {
   max-width: 650px;
+  /* font-family: var(--ff-saira-stencil-one); */
 }
 
 .hero-title {
   text-align: center;
   margin-bottom: 10px;
+  /* font-family: var(--ff-saira-stencil-one); */
 }
 
 /** animated-text */
@@ -802,7 +1005,35 @@ main {
 }
 
 .project-card:is(:hover, :focus)::after {
-  background: hsla(0, 0%, 15%, 0.15);
+  /* background: hsla(0, 0%, 15%, 0.15); */
+
+  /* Created with https://www.css-gradient.com 
+  background: rgba(68, 68, 68, 0.15);
+  background: -webkit-radial-gradient(
+    center,
+    rgba(68, 68, 68, 0.15),
+    rgba(126, 126, 126, 0.85)
+  );
+  background: -moz-radial-gradient(
+    center,
+    rgba(68, 68, 68, 0.15),
+    rgba(126, 126, 126, 0.85)
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(68, 68, 68, 0.15),
+    rgba(126, 126, 126, 0.85)
+  );*/
+
+  /* Created with https://www.css-gradient.com */
+background: #4B49EB55;
+background: -webkit-radial-gradient(center, #4B49EB55, #B49ED322);
+background: -moz-radial-gradient(center, #4B49EB55, #B49ED322);
+background: radial-gradient(ellipse at center, #4B49EB55, #B49ED322);
+
+
+
+  /****/
   backdrop-filter: blur(0.5px);
   box-shadow: unset;
 }
@@ -813,16 +1044,19 @@ main {
   left: 0;
   width: 100%;
   padding: 5px;
+  color: var(--color-raw-seinna);
+  z-index: 100;
 }
 
 .project-card .card-title {
   margin-bottom: 5px;
   border-radius: var(--radius-4);
+  color: var(--color-raw-seinna);
 }
 
 .project-card .card-view {
   /* background-color: var(--color-black-medium); */
-  color: rgb(123, 117, 117);
+  color: rgba(255, 255, 255, 0.418);
   font-size: 3rem;
   position: absolute;
   display: flex;
@@ -835,6 +1069,7 @@ main {
   z-index: 9;
   /* padding: 10px; */
 }
+
 
 .project-card :is(.card-title, .publish-date) {
   background: var(--bg-primary);
@@ -858,7 +1093,7 @@ main {
 
 .project-card .publish-date {
   font-size: var(--fs-6);
-  color: var(--color-primary);
+  color: var(--color-raw-seinna);
   transition-delay: 0s;
   border-radius: var(--radius-4);
 }
@@ -1040,7 +1275,7 @@ textarea.input-field {
 
 .footer {
   background: var(--bg-secondary);
-  padding-block: 20px;
+  padding-block: 80px 40px;
   text-align: center;
   box-shadow: var(--shadow-1);
 }
@@ -1084,9 +1319,12 @@ textarea.input-field {
   z-index: 2;
 }
 
-/* .go-top > ion-icon {
-  color: var(--color-primary);
-} */
+.go-top:hover {
+  color: var(--color-white);
+  border: 2px solid var(--color-raw-seinna);
+  background-color: var(--color-raw-seinna);
+  box-shadow: 1px 2px 20px #907aff;
+}
 
 .go-top.active {
   opacity: 1;
