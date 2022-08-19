@@ -6,16 +6,13 @@
 
 :root {
   /** COLORS */
-  /*--color-raw-seinna: hsl(24, 74%, 58%);*/
-  --color-raw-seinna: #8f7bef;
-
+  --color-raw-seinna: hsl(250, 78%, 71%);
   /***/
-  --color-purple: #8f7bef;
-  --color-blue: hsl(251, 85%, 58%);
+  /* --color-purple: #8f7bef; */
+  /* --color-blue: hsl(251, 85%, 58%); */
   --color-gray-light: hsl(260, 100%, 98%);
   --color-black: hsl(0, 0%, 13%);
   --color-black-medium: hsl(340, 2%, 25%);
-
   --bg-purple: hsla(250, 78%, 71%, 0.5);
   --bg-blue: hsla(251, 85%, 58%, 0.5);
   /***/
@@ -27,10 +24,6 @@
   /**  TYPOGRAPHY */
 
   --ff-saira-stencil-one: "Antonio", sans-serif;
-  /* --ff-saira-stencil-one: "Saira Stencil One", sans-serif; */
-
-  /* --ff-poppins: "Poppins", sans-serif; */
-  /* --ff-saira-stencil-one: "Autour One", cursive; */
   --ff-poppins: "Poppins", sans-serif;
   --ff-roboto: "Roboto", sans-serif;
 
@@ -241,9 +234,10 @@ body.active {
 */
 .chicle:hover {
   -webkit-animation: 1s chicle 1;
+  animation: 1s chicle 1;
 }
 
-@-webkit-keyframes chicle {
+@keyframes chicle {
   30% {
     -webkit-transform: scaleX(1.25) scaleY(0.75);
   }
@@ -258,11 +252,13 @@ body.active {
 /** */
 
 .cartel:hover {
+  animation: 1s cartel 1;
   -webkit-animation: 1s cartel 1;
+  transform-origin: top center;
   -webkit-transform-origin: top center;
 }
 
-@-webkit-keyframes cartel {
+@keyframes cartel {
   20% {
     -webkit-transform: rotate(15deg);
   }
@@ -280,10 +276,11 @@ body.active {
 
 /** */
 .balancear:hover {
+  animation: 1s balancear 1;
   -webkit-animation: 1s balancear 1;
 }
 
-@-webkit-keyframes balancear {
+@keyframes balancear {
   20% {
     -webkit-transform: scale(0.7) rotate(-6deg);
   }
@@ -805,6 +802,7 @@ main {
 .about .btn {
   max-width: unset;
   width: 100%;
+  text-align: center;
 }
 
 .about .btn-secondary {
@@ -971,7 +969,7 @@ main {
   margin-top: 5px;
 }
 
-.stats-card > ion-icon {
+.stats-card > i {
   color: var(--color-secondary);
 }
 
@@ -1007,7 +1005,7 @@ main {
 .project-card:is(:hover, :focus)::after {
   /* background: hsla(0, 0%, 15%, 0.15); */
 
-  /* Created with https://www.css-gradient.com 
+  /* Created with https://www.css-gradient.com */
   background: rgba(68, 68, 68, 0.15);
   background: -webkit-radial-gradient(
     center,
@@ -1023,15 +1021,13 @@ main {
     ellipse at center,
     rgba(68, 68, 68, 0.15),
     rgba(126, 126, 126, 0.85)
-  );*/
+  );
 
   /* Created with https://www.css-gradient.com */
-background: #4B49EB55;
-background: -webkit-radial-gradient(center, #4B49EB55, #B49ED322);
-background: -moz-radial-gradient(center, #4B49EB55, #B49ED322);
-background: radial-gradient(ellipse at center, #4B49EB55, #B49ED322);
-
-
+  /* background: #4b49eb55;
+  background: -webkit-radial-gradient(center, #4b49eb55, #b49ed322);
+  background: -moz-radial-gradient(center, #4b49eb55, #b49ed322);
+  background: radial-gradient(ellipse at center, #4b49eb55, #b49ed322); */
 
   /****/
   backdrop-filter: blur(0.5px);
@@ -1056,7 +1052,7 @@ background: radial-gradient(ellipse at center, #4B49EB55, #B49ED322);
 
 .project-card .card-view {
   /* background-color: var(--color-black-medium); */
-  color: rgba(255, 255, 255, 0.418);
+  color: rgba(236, 236, 236, 0.7);
   font-size: 3rem;
   position: absolute;
   display: flex;
@@ -1069,7 +1065,6 @@ background: radial-gradient(ellipse at center, #4B49EB55, #B49ED322);
   z-index: 9;
   /* padding: 10px; */
 }
-
 
 .project-card :is(.card-title, .publish-date) {
   background: var(--bg-primary);
@@ -1141,10 +1136,10 @@ background: radial-gradient(ellipse at center, #4B49EB55, #B49ED322);
 
 .contact-item-icon {
   font-size: 25px;
-  color: var(--color-primary);
+  color: var(--color-raw-seinna);
 }
 
-.contact-item-icon ion-icon {
+.contact-item-icon i {
   --ionicon-stroke-width: 40px;
 }
 
@@ -1228,7 +1223,7 @@ background: radial-gradient(ellipse at center, #4B49EB55, #B49ED322);
   transition: var(--transition-1);
 }
 
-.input-wrapper ion-icon {
+.input-wrapper i {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -1248,7 +1243,7 @@ textarea.input-field {
   outline: 1px solid;
 }
 
-.input-field:focus + ion-icon {
+.input-field:focus + i {
   color: var(--color-raw-seinna);
 }
 
@@ -1324,6 +1319,15 @@ textarea.input-field {
   border: 2px solid var(--color-raw-seinna);
   background-color: var(--color-raw-seinna);
   box-shadow: 1px 2px 20px #907aff;
+  transform: rotate(360deg);
+}
+
+.go-top i {
+  transition: 4.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.go-top i:hover {
+  transform: rotate(360deg);
 }
 
 .go-top.active {
